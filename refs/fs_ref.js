@@ -58,11 +58,47 @@ const path = require('path')
 //     }
 // )
 
+// fs.writeFile(
+//     path.join(__dirname, '../', 'index.js'),
+//     'const http = require(\'http\')',
+//     (error) => {
+//         if(error) throw error
+//         console.log('Write successful')
+//     }
+// )
+
+// create folder views in the root
+// fs.mkdir(
+//     path.join(__dirname, '../', 'views'),
+//     error => {
+//         if(error) throw error
+//         console.log('folder was created')
+//     }
+// )
+
+// fs.writeFile(
+//     path.join(__dirname, '../views/', 'index.html'),
+//     '',
+//     error => {
+//         if(error) throw error
+//         console.log('about.html js was created')
+//     }
+// )
+
+// remove folder
+// fs.rmdir(
+//     path.join(__dirname, '../console.js'),
+//     error => {
+//         if(error) throw error
+//         console.log('console.js was removed')
+//     }
+// )
+
 fs.writeFile(
-    path.join(__dirname, '../', 'index.js'),
-    'const http = rquire(\'http\')',
-    (error) => {
+    path.join(__dirname, '..', 'console.js'),
+    '',
+    error => {
         if(error) throw error
-        console.log('Write successful')
+        console.log('console.js file was created')
     }
 )
